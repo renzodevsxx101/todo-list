@@ -191,7 +191,7 @@
 
 @media (max-width: 600px) {
   .main-content {
-    padding: 40px;
+    padding: 30px;
   }
 
   .form-grid {
@@ -208,7 +208,7 @@
 
 @media (max-width: 420px) {
   .main-content {
-    padding: 40px;
+    padding: 15px;
   }
 
   .form-grid {
