@@ -193,8 +193,9 @@
   }
 
   .todo-app-container {
-    flex-direction: column;
+    flex-direction: column-reverse;
     gap: 10px;
     margin: 20px;
+    border-radius: 10px;
   }
 }
