@@ -141,7 +141,7 @@
 
 .main-content {
   flex-grow: 1;
-  padding: 20px;
+  padding: 50px;
   background-color: rgb(203, 225, 218);
 }
 
@@ -184,8 +184,8 @@
 }
 
 @media (max-width: 768px) {
-  .container {
-    max-width: 90%;
+  .main-content {
+    padding: 18px;
   }
 
   .form-grid {
