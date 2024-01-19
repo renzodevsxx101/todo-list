@@ -13,7 +13,7 @@
 }
 
 .todo-header {
-  margin: 20px;
+  margin: 10px;
 }
 
 .form-grid {
@@ -39,7 +39,7 @@
   align-items: center;
   border: 1px solid #ced4da;
   border-radius: 4px;
-  padding: 5px 10px;
+  padding: 5px;
   background-color: whitesmoke;
 }
 
@@ -133,7 +133,7 @@
 }
 
 .sidebar {
-  flex: 0 1 auto;
+  flex: 0 0 auto;
   padding: 20px;
   background-color: #e9f1f2;
   border-right: 1px solid #ececec;
@@ -141,7 +141,7 @@
 
 .main-content {
   flex-grow: 1;
-  padding: 40px;
+  padding: 10px;
   background-color: rgb(203, 225, 218);
 }
 
@@ -190,5 +190,11 @@
 
   .form-grid {
     grid-template-columns: 1fr;
+  }
+
+  .todo-app-container {
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px;
   }
 }
