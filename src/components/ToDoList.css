@@ -141,7 +141,7 @@
 
 .main-content {
   flex-grow: 1;
-  padding: 50px;
+  padding: 30px 60px;
   background-color: rgb(203, 225, 218);
 }
 
@@ -183,7 +183,7 @@
   margin-left: 15px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 400px) {
   .main-content {
     padding: 18px;
   }
