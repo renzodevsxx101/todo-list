@@ -1,0 +1,194 @@
+.my-container {
+  padding: 50px;
+  border: 1px solid #6c757d;
+  border-radius: 10px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media (min-width: 992px) {
+  .my-container {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
+
+.todo-header {
+  margin: 20px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  gap: 15px;
+}
+
+.form-grid input,
+.grid-item {
+  max-width: 100%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5px;
+}
+
+.grid-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  padding: 5px 10px;
+  background-color: whitesmoke;
+}
+
+.grid-item .form-check {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.grid-item .form-check-label {
+  margin: 0;
+}
+
+.btn-danger {
+  margin-left: 10px;
+}
+
+.grid-item .form-check input {
+  display: flex;
+  align-items: center;
+  margin-right: 2rem;
+}
+
+.grid-item .item-date {
+  margin-left: 25px;
+  font-size: 0.7rem;
+  color: #6c757d;
+}
+
+.progress {
+  height: 20px;
+  margin-top: 6px;
+}
+
+.progress-bar {
+  transition: width 0.6s ease;
+}
+
+.grid-item.completed {
+  background-color: #decfcf;
+}
+
+.grid-item.completed .form-check-label {
+  color: #6c757d;
+  text-decoration: line-through;
+}
+
+.bold-text {
+  font-weight: 600;
+}
+
+.item-number {
+  margin-left: 10px;
+}
+
+.todo-counters {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  font-size: 0.9rem;
+}
+
+.todos-left .badge,
+.all-todos .badge {
+  margin-right: 0;
+}
+
+.badge-primary {
+  background-color: #007bff;
+}
+
+.badge-info {
+  background-color: #17a2b8;
+}
+
+.green-button {
+  background-color: #17a2b8;
+  border: none;
+  padding: 5px 8px;
+  border-radius: 5px;
+  color: whitesmoke;
+  font-weight: 400;
+}
+
+.todo-app-container {
+  display: flex;
+  max-width: 800px;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar {
+  flex: 0 1 auto;
+  padding: 20px;
+  background-color: #e9f1f2;
+  border-right: 1px solid #ececec;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 40px;
+  background-color: rgb(203, 225, 218);
+}
+
+.todos-left-list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.todo-left-item {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  padding: 5px 10px;
+  background-color: whitesmoke;
+}
+
+.todo-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.todo-left-number {
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+.todo-left-text {
+  flex-grow: 1;
+}
+
+.todo-left-time {
+  font-size: 0.8em;
+  color: #666;
+  margin-left: 15px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 90%;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+}
