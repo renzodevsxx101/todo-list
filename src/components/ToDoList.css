@@ -141,7 +141,7 @@
 
 .main-content {
   flex-grow: 1;
-  padding: 20px;
+  padding: 30px 60px;
   background-color: rgb(203, 225, 218);
 }
 
@@ -184,12 +184,18 @@
 }
 
 @media (max-width: 768px) {
-  .container {
-    max-width: 90%;
+  .form-grid {
+    grid-template-columns: 3fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .main-content {
+    padding: 30px;
   }
 
   .form-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 
   .todo-app-container {
@@ -197,5 +203,15 @@
     gap: 10px;
     margin: 20px;
     border-radius: 10px;
+  }
+}
+
+@media (max-width: 420px) {
+  .main-content {
+    padding: 15px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
   }
 }
