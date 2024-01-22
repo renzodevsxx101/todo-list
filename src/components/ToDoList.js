@@ -40,12 +40,17 @@ class ToDoList extends React.Component {
     }));
   };
 
-  handleDeleteItem = () => {
+  handleDeleteItem = (selectedItemId) => {
     this.setState((prevState) => {
       const items = [...prevState.items];
-      if (items.length > 0) {
-        items.shift();
+      const indexToDelete = items.findIndex(
+        (item) => item.id === selectedItemId
+      );
+
+      if (indexToDelete !== -1) {
+        items.splice(indexToDelete, 1);
       }
+
       return { items };
     });
   };
